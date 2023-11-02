@@ -31,7 +31,7 @@ class ChatScreen extends GetWidget<ChatController> {
                           padding: EdgeInsets.only(left: 1.h),
                           child: _buildDrMarcusHorizon(
                               userName: "msg_dr_marcus_horizon".tr,
-                              timeAgo: "lbl_10_min_ago".tr)),
+                              time: "lbl_10_min_ago".tr)),
                       SizedBox(height: 10.v),
                       Container(
                           margin: EdgeInsets.only(left: 1.h, right: 129.h),
@@ -76,7 +76,7 @@ class ChatScreen extends GetWidget<ChatController> {
                           padding: EdgeInsets.only(left: 1.h),
                           child: _buildDrMarcusHorizon(
                               userName: "msg_dr_marcus_horizon".tr,
-                              timeAgo: "lbl_5_min_ago".tr)),
+                              time: "lbl_5_min_ago".tr)),
                       SizedBox(height: 10.v),
                       Container(
                           margin: EdgeInsets.only(left: 1.h, right: 113.h),
@@ -123,7 +123,7 @@ class ChatScreen extends GetWidget<ChatController> {
                           padding: EdgeInsets.only(left: 1.h),
                           child: _buildDrMarcusHorizon(
                               userName: "msg_dr_marcus_horizon".tr,
-                              timeAgo: "lbl_online".tr)),
+                              time: "lbl_online".tr)),
                       SizedBox(height: 10.v),
                       Container(
                           height: 22.v,
@@ -209,7 +209,7 @@ class ChatScreen extends GetWidget<ChatController> {
   /// Common widget
   Widget _buildDrMarcusHorizon({
     required String userName,
-    required String timeAgo,
+    required String time,
   }) {
     return Row(children: [
       CustomImageView(
@@ -225,7 +225,7 @@ class ChatScreen extends GetWidget<ChatController> {
                 style: theme.textTheme.titleSmall!
                     .copyWith(color: theme.colorScheme.onPrimary)),
             SizedBox(height: 7.v),
-            Text(timeAgo,
+            Text(time,
                 style: theme.textTheme.labelMedium!
                     .copyWith(color: appTheme.gray500))
           ]))

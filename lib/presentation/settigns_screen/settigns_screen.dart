@@ -60,7 +60,7 @@ class SettignsScreen extends GetWidget<SettignsController> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     _buildSettingOption(
-                      appointmentLabel: "lbl_my_saved".tr,
+                      appointment: "lbl_my_saved".tr,
                     ),
                     SizedBox(height: 13.v),
                     Divider(
@@ -68,7 +68,7 @@ class SettignsScreen extends GetWidget<SettignsController> {
                     ),
                     SizedBox(height: 13.v),
                     _buildSettingOption(
-                      appointmentLabel: "lbl_appointment".tr,
+                      appointment: "lbl_appointment".tr,
                     ),
                     SizedBox(height: 13.v),
                     Divider(
@@ -76,7 +76,7 @@ class SettignsScreen extends GetWidget<SettignsController> {
                     ),
                     SizedBox(height: 13.v),
                     _buildSettingOption(
-                      appointmentLabel: "lbl_payment_method".tr,
+                      appointment: "lbl_payment_method".tr,
                     ),
                     SizedBox(height: 13.v),
                     Divider(
@@ -84,7 +84,7 @@ class SettignsScreen extends GetWidget<SettignsController> {
                     ),
                     SizedBox(height: 13.v),
                     _buildSettingOption(
-                      appointmentLabel: "lbl_faqs".tr,
+                      appointment: "lbl_faqs".tr,
                     ),
                     SizedBox(height: 13.v),
                     Divider(
@@ -92,7 +92,7 @@ class SettignsScreen extends GetWidget<SettignsController> {
                     ),
                     SizedBox(height: 13.v),
                     _buildSettingOption(
-                      appointmentLabel: "lbl_help".tr,
+                      appointment: "lbl_help".tr,
                     ),
                     SizedBox(height: 24.v),
                   ],
@@ -219,7 +219,7 @@ class SettignsScreen extends GetWidget<SettignsController> {
   }
 
   /// Common widget
-  Widget _buildSettingOption({required String appointmentLabel}) {
+  Widget _buildSettingOption({required String appointment}) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -238,7 +238,7 @@ class SettignsScreen extends GetWidget<SettignsController> {
             bottom: 9.v,
           ),
           child: Text(
-            appointmentLabel,
+            appointment,
             style: theme.textTheme.titleMedium!.copyWith(
               color: theme.colorScheme.onPrimary,
             ),
